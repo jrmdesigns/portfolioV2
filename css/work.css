@@ -11,7 +11,6 @@
 body{
   margin:0;
   padding:0;
-  overflow: hidden;
 }
 .js-horizontal-button{
   position: absolute;
@@ -128,7 +127,7 @@ div{
   position: absolute;
   top:35%;
   left: 15%;
-  font-size: calc(10px + 4vw);
+  font-size: 60px;
   font-family: jorime;
   padding: 0;
   margin: 0;
@@ -139,17 +138,17 @@ div{
   top: 22%;
   left: 15.5%;
   font-family: bebas;
-  font-size: calc(10px + 2vw);
+  font-size: 30px;
   color: #A5A7A7;
   letter-spacing: 3px;
 }
 
 #home h3{
   position: absolute;
-  top: 66%;
+  top: 65%;
   left: 15.5%;
   font-family: jorime;
-  font-size: calc(8px + 1vw);
+  font-size: 16px;
   color: #A5A7A7;
   letter-spacing: 3px;
 }
@@ -347,100 +346,11 @@ label{
   cursor: pointer;
 }
 
-
-
-.work{
-  background-size: cover;
-  object-fit: cover;
-}
-
-.work .work-overlay{
-  background-color: rgba(0,0,0, .75);
-  width: 50%;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  color: #fff;
-  font-family: jorime;
-}
-
-.work .work-overlay .work-info{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  display: flex;
-  flex-direction: column;
-  transform: translate(-50%, -50%);
-}
-
-.work .work-image{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-
-  /* transform: translateY(-50%); */
-  transform: translate(-5%, -50%);
-}
-
-.work .work-overlay .work-info span{
-  margin-bottom: 15px;
-}
-
-.work .work-overlay .work-info .works, .work .work-overlay .work-info .title, .work .work-overlay .work-info .slogan{
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.work .work-overlay .work-info .works{
-  color: #cfbaa6;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.work .work-overlay .work-info .title{
-  font-size: 30px;
-  margin-bottom: 0px;
-}
-
-.work .work-overlay .work-info .slogan{
-  font-size: 14px;
-  margin-bottom: 20px;
-  
-}
-
-.work .work-overlay .work-info .skills-used, .work .work-overlay .work-info .year{
-  font-size: 12px;
-}
-
-.work .work-overlay .work-info .work-open-poject-button{
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  font-size: 12px;
-  border: 1px solid white;
-  width: fit-content;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.work .work-overlay .work-info .work-open-poject-button:hover{
-  cursor: pointer;
-}
-
 #header-image{
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
-
-#project-wrapper{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99999;
 }
 
 #project-wrapper h1{
@@ -541,12 +451,4 @@ label{
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#js-project-close{
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  z-index: 99999999;
-  display: none;
 }

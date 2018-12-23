@@ -16,7 +16,7 @@
 </head>
 
 <body onresize="resizeWindow()">
-    <aside id="menubutton">
+    <aside id="menubutton" class="js-hide">
         <span onclick="openNav()"><i class="fas fa-bars link"></i></span>
     </aside>
     <aside id="menu">
@@ -35,9 +35,12 @@
 
         </ul>
         <section class="js-menu-item">
-            <h1>Creative<br/>Passionate<br/>Focused</h1>
-            <p>Currently I'm a freelance designer and web developer, who works with a variety of clients and on many diverse projects.</p>
-            <p class="sub-paragraph">I work to create innovative solutions that inspire, and foster memorable relationships between brands and their clients. With a focus on branding and UI / Web, I strive to create usable and polished products through passionate and deliberate design.</p>
+            <h1>Creative<br />Passionate<br />Focused</h1>
+            <p>Currently I'm a freelance designer and web developer, who works with a variety of clients and on many
+                diverse projects.</p>
+            <p class="sub-paragraph">I work to create innovative solutions that inspire, and foster memorable
+                relationships between brands and their clients. With a focus on branding and UI / Web, I strive to
+                create usable and polished products through passionate and deliberate design.</p>
         </section>
         <section class="js-menu-item hidden">
             <section id="development-list">
@@ -51,13 +54,13 @@
                     <ul>
                         <li>Yoomla!</li>
                         <li>Wordpress</li>
-                    </ul> 
+                    </ul>
                 </section>
 
             </section>
             <section id="design-list">
-                    <h2>Creative</h2>
-                    <section class="lists">
+                <h2>Creative</h2>
+                <section class="lists">
                     <ul>
                         <li>Logo Designer</li>
                         <li>Web Designer</li>
@@ -67,44 +70,113 @@
                         <li>Illustrator</li>
                         <li>Adobe XD</li>
                     </ul>
-                    </section>
+                </section>
             </section>
         </section>
         <section class="js-menu-item hidden">
-            <h1>Let's Build<br/>Something<br/>Together</h1>
-            <p class="sub-paragraph contact-details">j.r.meulink@outlook.com<br/><br/>+31612345678<br/><br/>Breda, Nederland</p>
+            <h1>Let's Build<br />Something<br />Together</h1>
+            <p class="sub-paragraph contact-details">j.r.meulink@outlook.com<br /><br />+31612345678<br /><br />Breda,
+                Nederland</p>
         </section>
     </aside>
-    <div id="home" class="js-anchor js-horizontal-slider">
-        <div id="home-overlay"></div>
+    <div id="home" class="js-anchor js-hide">
+        <div id="home-overlay" onclick="closeNav();"></div>
         <h2>Hi i'm John Meulink</h2>
-        <h1>Graphic Designer<br/>Game Developer<br/>Web Developer</h1>
+        <h1>Game Developer<br />Web Developer<br/>Designer</h1>
         <h3>Scroll down to see my work</h3>
-        <button id="js-scroll-right-button" class="js-horizontal-button right-button link" onclick="horizontalSliderSetChange(1)"><i
-                class="fas fa-arrow-right"></i>
-        </button>
     </div>
-    <div id="div" class="js-horizontal-slider">slider 1 <button id="js-scroll-right-button" class="js-horizontal-button  right-button link"
-            onclick="horizontalSliderSetChange(1)"><i class="fas fa-arrow-right"></i>
-        </button>
-        <button id="js-scroll-left-button" class="js-horizontal-button left-button link" onclick="horizontalSliderSetChange(-1)"><i
-                class="fas fa-arrow-left"></i>
-        </button></div>
-    <div id="div" class="js-horizontal-slider">slider 2 <button id="js-scroll-right-button" class="js-horizontal-button  right-button link"
-            onclick="horizontalSliderSetChange(1)"><i class="fas fa-arrow-right"></i>
-        </button>
-        <button id="js-scroll-left-button" class="js-horizontal-button left-button link" onclick="horizontalSliderSetChange(-1)"><i
-                class="fas fa-arrow-left"></i>
-        </button></div>
-    <div id="div" class="js-horizontal-slider">slider 3
-        <button id="js-scroll-left-button" class="js-horizontal-button left-button link" onclick="horizontalSliderSetChange(-1)"><i
-                class="fas fa-arrow-left"></i>
-        </button></div>
 
-    <div id="div" class="js-anchor">WORK 1</div>
-    <div id="div" class="js-anchor">WORK 2</div>
-    <div id="div" class="js-anchor">WORK 3</div>
+    <div id="div" class="js-anchor work js-hide" style="background-image: url('images/work/haeinsa/background.jpg');">
+        <section class="work-overlay">
+            <section class="work-info">
+            <span class="works">Works</span>
+            <span class="title">Haeinsa exhibition</span>
+            <span class="slogan">The origin of typography</span>
+            <span class="skills-used">Identity, UI/UX, Web</span>
+            <span class="year">2016</span>
+            <span class="work-open-poject-button" onclick="openProject(1);">Open Project</span>
+            </section>
+        </section>
+        <img src="images/work/haeinsa/work_image.png" alt="haeinsa" class="work-image">
     </div>
+    <div id="div" class="js-anchor work js-hide">WORK 2</div>
+    <div id="div" class="js-anchor work js-hide">WORK 3</div>
+    </div>
+
+    <section id="project-wrapper" class="js-anchor">
+            <section id="project-navigation">
+                    <ul>
+                        <li>Information</li>
+                        <li>Font and Color</li>
+                        <li>Web design</li>
+                        <li>App design</li>
+                    </ul>
+        
+                    <span id="project-navigation-identifier">3</span>
+                </section>
+                <header id="header-image" style="background-image: url('images/work/haeinsa/background.jpg');"></header>
+                <section id="project-information" class="project-section">
+                    <h1>Project information</h1>
+                    <p>In early 13th century in Korea, about 200 years earlier than the invention of Gutenberg Bible, the
+                        complete set of a Buddhist canon known as the Tripitaka Koreana was printed. It is considered as the
+                        oldest and the most complete collection of Buddhist texts which reflects the printing technology in the
+                        13th century. The woodblocks used for printing are conserved and preserved in the temple Haeinsa, which
+                        is registered as a UNESCO world heritage.
+        
+                        Despite its significance in the history of typography and printing technology, Haeinsa and the
+                        woodblocks are not widely known. This project is a concept exhibition about the Haeinsa at the RISD
+                        museum in order to introduce the history of Eastern printing press.</p>
+                </section>
+                <section id="project-colors-fonts" class="project-section">
+                    <h1>Colorscheme</h1>
+                    <section id="project-colors-section">
+                        <section class="color-box" style="background-color: #000;">
+                            <span>#000000</span>
+                        </section>
+                        <section class="color-box" style="background-color: #908f8a;">
+                            <span>#908f8a</span>
+                        </section>
+                        <section class="color-box" style="background-color: #c2c2c1;">
+                            <span>#c2c2c1</span>
+                        </section>
+                        <section class="color-box" style="background-color: #e5e4eb;">
+                                <span>#e5e4eb</span>
+                            </section>
+                            <section class="color-box" style="background-color: #775646;">
+                                <span>#775646</span>
+                            </section>
+                            <section class="color-box" style="background-color: #d0baa6;">
+                                <span>#d0baa6</span>
+                            </section>
+                            <section class="color-box" style="background-color: #252c3f;">
+                                    <span>#252c3f</span>
+                                </section>
+                    </section>
+                    <h1>Haeinsa font</h1>
+                    <section id="project-font-section">
+                        <p>Haeinsa is located in South Korea. However, when the woodblocks were made during the 13th century, which is almost 200 years earlier than the invention of Korean writing system 'Hangul', Koreans used Chinese characters as their writing system. In order to show all three (Chinese, Korean, and English) culture and languages, I picked Spoqa Han Sans which supports all three and also both web and prints. The Electra Std was also used as a main and display typeface for the branding to be consistent with the delicacy of engraved Chinese characters.</p>
+                    </section>
+        
+                </section>
+                <section id="project-desktop-images" class="project-section">
+                    <h1>Web design - desktop</h1>
+                    <section id="desktop-images-container">
+                        <h4>Main Navigation</h4>
+                        <img src="images/work/haeinsa/web00.png" alt="web 00" class="desktop-image">
+                        <h4>On Mouse Over</h4>
+                        <img src="images/work/haeinsa/web01.png" alt="web 01" class="desktop-image">
+                        <h4>Expand Column When Clicked</h4>
+                        <img src="images/work/haeinsa/web02.png" alt="web 02" class="desktop-image">
+                        <h4>Detail Page View</h4>
+                        <img src="images/work/haeinsa/web03.png" alt="web 03" class="desktop-image">
+                    </section>
+                </section>
+                <section id="project-mobile-images" class="project-section">
+                    <h1>Web design - mobile</h1>
+                    <img src="images/work/haeinsa/branding2000.png" alt="mobile-image" class="mobile-image">
+                </section>
+    </section>
+    <button id="js-project-close" onclick="closeProject();">X</button>
 </body>
 
 </html>
